@@ -28,11 +28,11 @@
         if (match.score.length === 1) {
           battingTeam = match.score[0].inning;
           battingTeam = battingTeam.slice(0, -9);
-          console.log(battingTeam);
+          
         } else {
           battingTeam = match.score[1].inning;
           battingTeam = battingTeam.slice(0, -9);
-          console.log( battingTeam);
+          
         }
         if (match.matchEnded) {
           return `<p><img src=${match.teamInfo[0].img} alt="team-logo"> ${match.teamInfo[0].shortname} vs. ${match.teamInfo[1].shortname} <img src=${match.teamInfo[1].img} alt="team-logo"></p>
@@ -40,7 +40,10 @@
           <p>Result: ${match.status}</p>`;
         } else if (!match.matchEnded) {
           return `<p><img src=${match.teamInfo[0].img} alt="team-logo"> ${match.teamInfo[0].shortname} vs. ${match.teamInfo[1].shortname} <img src=${match.teamInfo[1].img} alt="team-logo"></p>
-        <p>${battingTeam}: ${match.score[0]?.r} - ${match.score[0]?.w}</p>`;
+           
+        <p>${battingTeam}: ${match.score[0]?.r} - ${match.score[0]?.w}</p>
+        <p>Status: ${match.status}</p>`
+        ;
         }
       }
     });
