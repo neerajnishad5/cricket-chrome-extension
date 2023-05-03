@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>CricQuick | Home</title>
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="https://thumbs.dreamstime.com/b/modern-professional-logo-cricket-sport-emblem-vector-illustration-111766034.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <style>
+      .main {
+        background-color: #252422;
+        /* border: 2px solid red; */
+        color: #fff8d6;
+        width: 22em;
+      }
+      .logo {
+        margin-top: 20px;
+        border-radius: 50%;
+      }
+      .refresh {
+        margin: 10px;
+        background-color: #f7e1ae;
+        color: black;
+      }
+      /* remove bullets from list */
+      ul {
+        list-style-type: none; /* Remove bullets */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margins */
+      }
+      li {
+        font-size: medium;
+        font-weight: bold;
+        background-color: #cfee9e;
+        color: #1e2019;
+        border: 2px solid #2a2b2a;
+        padding: 5px;
+        margin: 5px 0px;
+        border-radius: 5px;
+      }
+      button {
+        text-decoration: none;
+      }
+      .all-matches {
+        /* border: 2px solid #f7e1ae; */
+        /* border-radius: 5px; */
+        padding: 10px;
+        margin: 10px;
+      }
+      p img {
+        border-radius: 50%;
+      }
+      h4 {
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main text-center">
+      <img
+        class="logo"
+        src="https://thumbs.dreamstime.com/b/modern-professional-logo-cricket-sport-emblem-vector-illustration-111766034.jpg"
+        alt=""
+        width="70px"
+        srcset=""
+      />
+      <h3>CricQuick</h3>
+      
+      <div class="all-matches">
+        <ul>
+          <p>
+            <li class="bg-light p-2" id="matches">Loading...</li>
+          </p>
+        </ul>
+      </div>
+      <button class="btn refresh" onclick="getMatchData()">Refresh</button>
+    </div>
+  </body>
+</html>

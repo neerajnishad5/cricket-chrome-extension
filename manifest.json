@@ -1,0 +1,11 @@
+{
+  "name": "CricQuick",
+  "version": "1.0.0",
+  "description": "Cricket extension to get live cricket scores.",
+  "manifest_version": 3,
+  "author": "Neeraj Nishad",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "My chrome extension"
+  }
+}
