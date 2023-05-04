@@ -1,6 +1,5 @@
 (async function getMatchData() {
   try {
-    console.log("I am called");
     // calling api
     const data = await fetch(
       "https://api.cricapi.com/v1/currentMatches?apikey=fe7fe256-39c4-44f5-a7a3-a4967d168e9d&offset=0"
@@ -17,7 +16,7 @@
 
     // if array is empty return null array
     if (matchList.length === 0) {
-      document.getElementById("#no-match").innerText = "No matches running!";
+      document.getElementById("#matches").innerText = "No matches running!";
       return;
     }
 
@@ -27,17 +26,24 @@
         let battingTeam = "";
         if (match.score.length === 1) {
           battingTeam = match.score[0].inning;
-          battingTeam = battingTeam.slice(0, -9);
         } else {
           battingTeam = match.score[1].inning;
-          battingTeam = battingTeam.slice(0, -9);
         }
+        battingTeam = battingTeam.slice(0, -9);
+        
+        
         if (match.matchEnded) {
           return `<div>
           <div><p>On ${match.date.split("-").reverse().join(".")}</p></div>
-          <div><p><img src=${match.teamInfo[0].img} alt="team-logo"> ${match.teamInfo[0].shortname} vs. ${match.teamInfo[1].shortname} <img src=${match.teamInfo[1].img} alt="team-logo"></p></div>
+          <div><p><img src=${match.teamInfo[0].img} alt="team-logo"> ${
+            match.teamInfo[0].shortname
+          } vs. ${match.teamInfo[1].shortname} <img src=${
+            match.teamInfo[1].img
+          } alt="team-logo"></p></div>
                 
-          <div><span>Result:</span> <span class="result">${match.status}</span> </div> </div>`;
+          <div><span>Result:</span> <span class="result">${
+            match.status
+          }</span> </div> </div>`;
         } else if (!match.matchEnded) {
           return `<p><img src=${match.teamInfo[0].img} alt="team-logo"> ${match.teamInfo[0].shortname} vs. ${match.teamInfo[1].shortname} <img src=${match.teamInfo[1].img} alt="team-logo"></p>
            
@@ -47,6 +53,7 @@
       }
     });
 
+    // removing undefined array objects
     const finalData = relevantData.filter((match) => match !== undefined);
 
     // populating li elements
@@ -58,6 +65,6 @@
   } catch (error) {
     console.log(error);
   }
-});
+})();
 
 // getMatchData();
