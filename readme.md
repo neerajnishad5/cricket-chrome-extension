@@ -19,6 +19,6 @@ CricQuick is a simple & elegant chrome extension for getting all the latest IPL 
 
 5. Select the unzipped folder/cloned folder
 
-6. Click on the extension button at the top right corner or go to `vertical three dots` at top right corner -> 
+6. Click on the extension button at the top right corner
 
 7. Find CricQuick extension and get all the latest updated about ongoing and ended IPL matches. Pin extension for quick access!😉
