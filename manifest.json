@@ -5,7 +5,14 @@
   "manifest_version": 3,
   "author": "Neeraj Nishad",
   "action": {
+    "default_icon": "icon128.png",
     "default_popup": "index.html",
     "default_title": "CricQuick"
-  }
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png",
+    "96": "icon96.png"
+  },
+  "permissions": ["activeTab"]
 }
