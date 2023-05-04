@@ -13,7 +13,7 @@ CricQuick is a simple & elegant chrome extension for getting all the latest IPL 
 
 2. Unzip if downloaded
 
-3. Go to Chrome browser enter `chrome://extensions/` in address bar
+3. Open Chrome browser and enter `chrome://extensions/` in address bar
 
 4. Click on the `Load unpacked` button at the left corner of view port
 
