@@ -58,6 +58,6 @@
   } catch (error) {
     console.log(error);
   }
-});
+})();
 
 // getMatchData();
