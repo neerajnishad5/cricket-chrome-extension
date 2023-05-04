@@ -6,6 +6,6 @@
   "author": "Neeraj Nishad",
   "action": {
     "default_popup": "index.html",
-    "default_title": "My chrome extension"
+    "default_title": "CricQuick"
   }
 }

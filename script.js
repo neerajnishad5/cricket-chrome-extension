@@ -37,7 +37,7 @@
         if (match.matchEnded) {
           return `<p><img src=${match.teamInfo[0].img} alt="team-logo"> ${match.teamInfo[0].shortname} vs. ${match.teamInfo[1].shortname} <img src=${match.teamInfo[1].img} alt="team-logo"></p>
                 
-          <p>Result: ${match.status}</p>`;
+          <span>Result:</span> <span class="result">${match.status}</span>`;
         } else if (!match.matchEnded) {
           return `<p><img src=${match.teamInfo[0].img} alt="team-logo"> ${match.teamInfo[0].shortname} vs. ${match.teamInfo[1].shortname} <img src=${match.teamInfo[1].img} alt="team-logo"></p>
            
@@ -59,6 +59,6 @@
   } catch (error) {
     console.log(error);
   }
-})();
+}) ();
 
 // getMatchData();
