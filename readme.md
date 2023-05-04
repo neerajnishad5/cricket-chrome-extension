@@ -1,7 +1,7 @@
 
 # CricQuick
 
-CricQuick is a simple chrome extension for getting all the latest IPL updates.
+CricQuick is a simple & elegant chrome extension for getting all the latest IPL updates.
 
 
 
