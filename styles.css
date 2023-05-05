@@ -2,3 +2,61 @@ body {
   min-width: 300px;
   border-radius: 5px;
 }
+
+.main {
+  /* background-color: #252422; */
+  background-image: url(https://shorturl.at/ktxN1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* opacity: 0.5; */
+  /* border: 2px solid red; */
+  color: #fff8d6;
+  width: 22em;
+}
+.logo {
+  margin-top: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+.refresh {
+  margin: 10px;
+  background-color: #f7e1ae;
+  color: black;
+}
+/* remove bullets from list */
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+li {
+  font-size: medium;
+  font-weight: bold;
+  background-color: #cfee9e;
+  color: #1e2019;
+  border: 2px solid #2a2b2a;
+  padding: 5px;
+  margin: 5px 0px;
+  border-radius: 5px;
+}
+button {
+  text-decoration: none;
+}
+.all-matches {
+  /* border: 2px solid #f7e1ae; */
+  /* border-radius: 5px; */
+  padding: 10px;
+  margin: 10px 10px 0px 10px;
+}
+p img {
+  border-radius: 50%;
+}
+h4 {
+  font-weight: bolder;
+}
+.result {
+  background-color: #273b09;
+  color: #f0d3f7;
+  padding: 4px;
+  border-radius: 3px;
+}
