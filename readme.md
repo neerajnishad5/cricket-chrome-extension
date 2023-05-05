@@ -6,6 +6,13 @@ CricQuick is a simple & elegant chrome extension for getting all the latest IPL 
 
 ![alt text](https://raw.githubusercontent.com/neerajnishad5/cricket-chrome-extension/master/updateImg.png)
 
+---
+
+## Cricket API used 
+
+[CricData](https://cricketdata.org/)
+
+---
 
 ## How to install
 
